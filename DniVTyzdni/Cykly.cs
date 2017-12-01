@@ -65,8 +65,38 @@ namespace DniVTyzdni
                 }
                 Console.WriteLine(i);
             }
-            
+
+        }
+
+        public static void HodnotVsReferencia()
+        {
+            int hodnota1 = 6;
+            int hodnota2;
+            hodnota2 = hodnota1;
+            hodnota2++;
+            Console.WriteLine(hodnota1);
+            Console.WriteLine(hodnota2);
+
+            Auto auto1 = new Auto();
+            auto1.Farba = "cervena";
+            Auto auto2 = auto1;
+            auto2.Farba = "cierna";
+
+            Console.WriteLine(auto1.Farba);
+            Console.WriteLine(auto2.Farba);
+        }
+
+        public static void PrefarbiAuto(Auto auto)
+        {
+            auto.Farba = "biela";
+
+        }
+
+        public static void ZvysOJedna(ref int a)
+        {
+            a++;
         }
     }
+
 
 }
