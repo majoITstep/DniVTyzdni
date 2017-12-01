@@ -10,6 +10,11 @@ namespace DniVTyzdni
     {
         static void Main(string[] args)
         {
+            // Cykly.CyklusWhile();
+            //Cykly.CyklusDoWhile();
+            // Cykly.CyklusFor();
+            Cykly.CyklusForContinue();
+            Console.ReadLine();
         }
     }
 }
